@@ -1,0 +1,23 @@
+# more info - https://docs.github.com/en/code-security/dependabot/ecosystems-supported-by-dependabot/supported-ecosystems-and-repositories
+
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      # Check for updates to GitHub Actions every day
+      interval: daily
+      
+  - package-ecosystem: pip
+    directory: /
+    schedule:
+      # Check for updates to pip every day
+      interval: daily
+      
+  - package-ecosystem: pip
+    directory: /
+    schedule:
+      # Check for updates to Poetry packages every day
+      interval: daily
+    # Enable version updates for Poetry
+    package-manager: poetry
